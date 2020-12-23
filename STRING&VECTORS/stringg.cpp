@@ -1,0 +1,59 @@
+/* // C++ program to demonstrate working of find(), 
+// rfind(),find_first_of() and find_last_of() 
+#include<iostream> 
+#include<string> 
+using namespace std; 
+int main() 
+{ 
+	string str="my name";
+
+	// find() returns position to first 
+	// occurrence of substring "Geeks" 
+	// Prints 4 
+	cout << "First occurrence of \"Geeks\" starts from : "; 
+	cout << str.find("Geeks") << endl; 
+
+	// Prints position of first occurrence of 
+	// any character of "reef" (Prints 2) 
+	cout << "First occurrence of character from \"reef\" is at : "; 
+	cout << str.find_first_of("reef") << endl; 
+
+	// Prints position of last occurrence of 
+	// any character of "reef" (Prints 16) 
+	cout << "Last occurrence of character from \"reef\" is at : "; 
+	cout << str.find_last_of("reef") << endl; 
+
+	// rfind() returns position to last 
+	// occurrence of substring "Geeks" 
+	// Prints 14 
+	cout << "Last occurrence of \"Geeks\" starts from : "; 
+	cout << str.rfind("Geeks") << endl; 
+
+	return 0; 
+
+} */
+#include <bits/stdc++.h>
+#include <iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    string str1,str2;
+    cout<<"enter string1"<<endl;
+    getline(cin,str1);
+    cout<<"enter string2 "<<endl;
+    getline(cin,str2);
+    cout<<str1<<endl;
+    cout<<str2<<endl;
+    //for(int i=0;i<str1.length;i++)
+    //{
+    if(str1.find(str2)<=str1.length())
+        cout<<"found at "<<str1.find(str2); 
+    else
+    {
+        cout<<"Not found";
+    }
+       
+    //}
+    //cout<<"not found"<<endl;
+} 
